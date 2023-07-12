@@ -1,0 +1,102 @@
+.carousel-img {
+    max-width: 500px;
+    max-height: 700px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.coding-community {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+.coding-community h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.coding-community p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.esport-community {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+.esport-community h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.esport-community p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.developer-community {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+.developer-community h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.developer-community p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.read-more-button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: #005fa3;
+}
+.our-communuites-section{
+    padding: 2rem 0;
+}
+
+.eSportPic{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100px;
+    margin-bottom: 2rem;
+}

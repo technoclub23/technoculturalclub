@@ -1,0 +1,136 @@
+/* about styling  */
+#about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 100px;
+    position: relative;
+}
+.about-left{
+    width: 50%;
+    padding: 0 100px 0 10px;
+    z-index: 2;
+}
+.about-left h3{
+   font-size: 3rem;
+   padding-bottom: 20px;
+   font-weight: 600;
+}
+.about-left button{
+    padding: 7px 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid var(--tertiary-color);
+    background-color: transparent;
+    color:var(--tertiary-color);
+    font-weight: bold;
+    transition: 0.5s;
+}
+.about-left button:hover{
+    border: 1px solid var(--tertiary-color);
+    background-color: var(--tertiary-color);
+    color:var(--secondary-color);
+}
+#about img {
+    width: 50%;
+}
+.rectangle{
+    background-color: blue;
+    height: 350px;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    transition: 0.5s;
+}
+.rectangle:hover{
+    width: 47%;
+    height: 400px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+.code,.code3,.code2{
+    position: absolute;
+    width: 60px !important;
+    animation-name:bounce ;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.code{
+    right: 250px;
+    bottom: 80px;
+}
+.code2{
+    top: 70px;
+    right: 550px;
+}
+.code3{
+    right: 40px;
+    top: 200px;
+}
+
+@media only screen and (max-width: 830px) {
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 100px 0;
+    }
+    #about .rectangle{
+        display: none;
+    }
+    #about img {
+        width: 80%;
+    }
+    .about-left{
+        width: 100%;
+        padding: 0 100px;
+    }
+    .about-left h3{
+        font-size: 4rem;
+    }
+    .about-left p{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+    .about-left button{
+        margin-top: 20px;
+    }
+    .code2{
+        bottom: 500px;
+        top: unset;
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #about{
+      padding: 0;
+    }
+    #about h3{
+        font-size: 2.5rem;
+    }
+    .about-left{
+        padding: 0 30px;
+    }
+    .about-left p{
+        font-size: 1rem;
+    }
+    .code{
+            right:unset;
+            left: 30px;
+        bottom: 0px;
+    }
+    .code2{
+        top: 20px;
+        left: 30px;
+        right: unset;
+    }
+    .code3{
+        right: 40px;
+        bottom: 80px;
+        top: unset;
+    }
+}

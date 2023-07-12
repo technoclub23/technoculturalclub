@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="assets/creators_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Righteous&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="creators_index.html">COMPETITION</a></li>
+                    <li><a href="creators_about.html">ABOUT</a></li>
+                    <li><a href="creators_winner.html">WINNERS</a></li>
+                    <li><a href="creators_contactus.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About</h1>
+    </section>
+
+    <!-- -------about us content---------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col" id="about-para">
+                <h1>CREATORS CONTEST</h1>
+                <p>Techno Cultural Club is organizing web designing contest - Creators for the GBU students from in School of Information and Communication Technology (SOICT). A perfect opportunity for students to showcase their Excellent Web Desgining skills. <br><p>There are 2 Rounds.<br> </p>
+                <p class="round"> <B> ROUND 1 : </B> Problem Statement will be given to you and you have to create the website on your own.<br>
+                  <B> ROUND 2 : </B> More Specifications and Requirements will be given to you for the Designing of Website.
+                </p><br>
+                <a href="https://forms.gle/vtMAaFdpGRoUwDf37" target="_blank">Register Now</a>
+            </div>
+            <div class="about-col">
+                <img src="./assets/images/undraw_building_websites_i78t.svg" alt="">
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="about-col">
+                <img src="./assets/images/undraw_to_do_list_re_9nt7.svg" alt="">
+            </div>
+            <div class="rules">
+                <h1>RULES</h1>
+                <ol>
+                    <li>Registration Fees Rs 30/- per team.</li>
+                    <li>Team Size : 2-3 Members (max : 3). </li>
+                    <li>Prizes for Best Women Team.</li>
+                    <li>Prizes/Goodies and Achievement Certificates for Top 3 Winners.</li>
+                    <li>Participation Certificates for All.</li>
+                    <li>Submissions will be done online.</li>
+                    <li>Appreciation Certificates for Top 10-15 positions.</li>
+                    <li>Attendance will be given on the days of evaluation to those <br>who will register and submit their work on time.</li>
+                </ol>
+            </div>   
+        </div>
+        <div class="row rowy">
+            <div class="perks">
+                <h1>PERKS OF PARTICIPATING</h1>
+            <ul>
+                <li> Achievement Certificates & Cash Prizes for students securing Top Positions in Hackathon.</li>
+                <li> Excellence Certificates and Consolation Prizes for Top 5 position in Hackathon other than winners.</li>
+                <li> Completion Certificates for all the attendees who will complete this Hackathon and submit their work.</li>
+                <li> Virtual Badges of different colors will be given to the good Performers on a weekly / task basis.</li>
+                <li> You will get a chance to be a part of Awareness Sessions , organized by National Intellectual Property Awareness Mission (NIPAM), organization of Government of India for which you will be getting Certificates by the Government of India.</li>
+                <li> Ranking will be given to all on a task basis.</li>
+                <li> Winners of each level and different *task completion will get Appreciation Certificates & rewards after completion of their work & this hackathon.</li>
+            </ul>
+            </div>
+            <div class="perk-right">
+                <img src="https://research-by-learning.netlify.app/Media/Illustrations/undraw_happy_news_re_tsbd.svg" alt="">
+            </div>
+        </div>         
+    </div>  
+    </section>          
+
+<!-- --------footer--------- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p><span>Research By Learning Hackathon</span> is organized by <span>Techno Culture Club</span> for the GBU students in <br>
+         School of Information and Communication Technology (SOICT). <br><br>
+        <span>Gautam Buddha University</span>, established by the Uttar Pradesh Act (9) of 2002  </p>
+    <div class="icons">
+       <a href="https://www.instagram.com/techno.club_gbu/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <a href="https://www.linkedin.com/company/techno-club-gbu/mycompany/"> <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.gbu.ac.in/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> </a>
+    </div>
+    <p>Made by: Oshi & Aryan</p>
+    <p>Mentored by Anushka Srivastava, Nikhil Mishra & Pankaj Kumar</p>
+</section>
+<!-- ---------------javascript for toggle menu ----------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

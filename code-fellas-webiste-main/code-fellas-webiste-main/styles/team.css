@@ -1,0 +1,150 @@
+#team{
+    display: flex;
+	flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+}
+.code4,.code5,.code6{
+    position: absolute;
+    width: 60px !important;
+    animation-name:bounce ;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.code4{
+    right: 300px;
+    bottom: 500px;
+}
+.code5{
+    top: 150px;
+    left: 200px;
+}
+.code6{
+    right: 200px;
+    top: 400px;
+}
+#team h2{
+	font-size: 3rem;
+	font-weight: 600;
+}
+.cards{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	font-size: 0.7rem;
+	opacity: 0.6;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container,.card-container2,.card-container3,.card-container9,.card-container4,.card-container5,.card-container6,.card-container7,.card-container8 {
+	background-color: rgba(0, 0, 255, 0.7);
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: white;
+	padding: 30px 0px;
+	position: relative;
+	width: 230px;
+    margin: 50px 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.socials img{
+	width: 20px;
+	transition: 0.3s;
+}
+.socials img:hover{
+	transform: rotate(10deg);
+}
+.card-container .socials,.card-container2 .socials,.card-container5 .socials,.card-container6 .socials,.card-container7 .socials,.card-container8 .socials,.card-container9 .socials,.card-container3 .socials,.card-container4 .socials {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: absolute;
+	background-color: rgb(52, 52, 255);
+	height: 50px;
+	display: none;
+	border-bottom-right-radius:10px ;
+	border-bottom-left-radius:10px ;
+	transition:0.5s;
+}
+.card-container:hover .socials,.card-container2:hover .socials,.card-container5:hover .socials,.card-container6:hover .socials,.card-container7:hover .socials,.card-container3:hover .socials,.card-container8:hover .socials,.card-container9:hover .socials ,.card-container3:hover .socials,.card-container4:hover .socials{
+	display: flex;
+	transform: translateY(-20px);
+}
+.card-container:hover .round,.card-container2:hover .round,.card-container5:hover .round,.card-container6:hover .round,.card-container7:hover .round,.card-container8:hover .round,.card-container9:hover .round,.card-container3:hover .round,.card-container4:hover .round{
+	transform: rotate(10deg);
+}
+
+.card-container .round,.card-container5 .round,.card-container6 .round,.card-container7 .round,.card-container8 .round,.card-container9 .round,.card-container2 .round,.card-container3 .round,.card-container4 .round {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 7px;
+    width: 150px;
+    margin-bottom: 20px;
+	transition: 0.5s;
+}
+
+button.primary {
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	color: blue;
+    font-weight: bold;
+    margin-right: 10px;
+	padding: 7px 10px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: white;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 830px) {
+	.code4{
+		right: 500px;
+		bottom: 20px;
+	}
+	.code5{
+		top: 1100px;
+		left: 100px;
+	}
+	.code6{
+		right: 50px;
+		top: 130px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    #team{
+		padding: 0;
+		height: 100%;
+	}
+	#team .drag{
+		display: none;
+	  }
+	  #team h2{
+		line-height: 60px;
+	  }
+}

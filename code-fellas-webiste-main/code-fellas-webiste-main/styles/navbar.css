@@ -1,0 +1,125 @@
+/* navbar styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0px 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    transition: 0.5s;
+    backdrop-filter: blur(20px);
+  }
+  nav span{
+    margin-right: auto;
+    width: 100%;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+nav font{
+  backdrop-filter: blur(20px);
+  transition: 0.5s;
+}
+nav font:hover {
+    cursor: pointer;
+    color: blue;
+}
+ .list{
+    display: flex;
+    list-style:none;
+  }
+ .list li{
+    padding:5px 5px 0px 5px;
+    text-align:center;
+    position:relative;
+    margin-left:50px
+  }
+ .list a{
+    text-decoration:none;
+    color:var(--primary-color);
+  }
+ .list a:hover{
+    color:blue;
+    transition:0.5s;
+  }
+ .list li:before{
+    position:absolute;
+    content:'';
+    width:15px;
+    height:15px;
+    left:10px;
+    top:10px;
+    border-top:2px solid blue;
+    border-left:2px solid blue;
+    opacity:0;
+    transition:0.5s;
+  }
+ .list li:hover:before{
+    opacity:1;
+    left:-10px;
+    top:0px;
+  }
+  
+ .list li:after{
+    position:absolute;
+    content:'';
+    width:15px;
+    height:15px;
+    right:10px;
+    bottom:10px;
+    border-bottom:2px solid blue;
+    border-right:2px solid blue;
+    opacity:0;
+    transition:0.5s;
+  }
+ .list li:hover:after{
+    opacity:1;
+    right:-10px;
+    bottom:-5px;
+  }
+.hamburger{
+  display: none;
+  height: 30px;
+  cursor: pointer;
+  fill: white;
+}
+.open{
+  display: flex !important;
+}
+
+@media only screen and (max-width: 830px) {
+  .hamburger{
+    display: block;
+  }
+  .list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    padding: 70px 80px 0 20px;
+    top: 0px;
+    z-index: -1;
+    background-color: var(--secondary-color);
+  }
+  .list li{
+    padding: 10px 0;
+  }
+  nav{
+    top: 0 !important;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  nav{
+    padding: 0 30px;
+  }
+  .list{
+    padding: 70px 40px 20px 0;
+  }
+}

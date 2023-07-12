@@ -1,0 +1,863 @@
+/*============================== BASE ============================*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {  
+    
+    background-color: rgb(246,246,242);
+    font-family: system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+}
+
+
+
+/*============================== NAV =========================*/ 
+.header {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+  }
+nav {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    align-items: center;
+    background-color: rgba(243, 243, 238, 0.726);
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+}
+label.logo {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+    color: rgb(56,128,135);
+    font-size: 35px;    
+    position: absolute;
+    font-weight: bold;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: rgb(16, 48, 51);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+nav a.active {
+    background: goldenrod;
+    transition: .5s;
+}
+nav a:hover {
+    background: goldenrod;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#menu-toggle {
+    display: none;
+}
+
+/*=================== Home ====================*/
+.home{
+    background-color: rgb(255, 255, 255);
+}
+.slideshow-container {
+  max-width: 70%;
+  padding-top: 80px;
+  margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+.active {
+    background-color: #717171;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 2%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes 
+fade {
+  from {opacity: 0.5} 
+  to {opacity: 1}
+}
+
+/*==================== About ====================*/
+
+.about {
+    font-family: Arial, sans-serif;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .about .paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    text-align: justify;
+  }
+
+/*=================== EVENTS ==================*/
+
+.event-container {
+    font-family: Arial, sans-serif;
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(214, 240, 221);
+    border-radius: 20px;
+  }
+  
+  .event-container h1 {
+    text-align: center;
+      
+    color: rgb(45, 71, 52);
+    margin-bottom: 30px;
+  }
+  
+  .day-container {
+    margin-bottom: 40px;
+  }
+  
+  .event-container h2 {
+    font-size: 24px;
+    color: rgb(35, 78, 82);
+    margin-bottom: 10px;
+  }
+  
+  .event-box {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .event-name {
+    font-size: 20px;
+    color: rgb(68, 120, 124);
+    margin-bottom: 10px;
+  }
+  
+  .event-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  
+  
+/* ================== GALLERY ================= */
+
+.gallery {
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(224, 238, 241);
+    max-width: 70%;    
+    margin: 20px auto;    
+    border-radius: 20px;
+    
+}
+
+.gallery h1 {
+    margin-top: 40px;    
+    color: rgb(56,128,135);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:  rgb(53, 135, 151);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.slidebox15 {
+    display: flex;
+    animation: scroll15 45s linear infinite;
+}
+
+.slidebox30 {
+    display: flex;
+    animation: scroll30 90s linear infinite;
+}
+
+.slideimage {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    perspective: 100px;
+    flex-shrink: 0;
+    z-index: 99;
+}
+
+.slideimage img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s, box-shadow 0.3s;
+    z-index: 99;
+}
+
+.slideimage img:hover {
+    transform: translateZ(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes scroll15 {
+    0% {
+        transform: translate(0);
+    }
+
+    5% {
+        transform: translate(0);
+    }
+    99% {
+        transform: translateX(calc(-300px * 12 + -400px * 3));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scroll30 {
+    0% {
+        transform: translate(0);
+    }
+
+    5% {
+        transform: translate(0);
+    }
+    99% {
+        transform: translateX(calc(-300px * 17 + -400px * 14));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* ================== ORGANIZER ================= */
+
+.organisers {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .organisers h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #388087;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #1c1c1c;
+    width: 270px;
+    color: white;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .car_1 {
+    background-image: url(assets/organisers/rizvi-sir.jpg);
+  }
+  
+  .car_2 {
+    background-image: url(assets/organisers/anushkai.jpg);
+  }
+  
+  .car_3 {
+    background-image: url(assets/organisers/nikhil.jpg);
+  }
+  
+  .car_4 {
+    background-image: url(assets/organisers/vimlesh.jpg);
+  }
+  .car_5 {
+    background-image: url(assets/organisers/priyanka.jpg);
+  }
+  .car_6 {
+    background-image: url(assets/organisers/prachi.jpg);
+  }
+  .car_7 {
+    background-image: url(assets/organisers/upkar.jpeg);
+  }
+  .car_8 {
+    background-image: url(assets/organisers/sachin.jpg);
+  }
+  .car_9 {
+    background-image: url(assets/organisers/riddhi.jpg);
+  }
+  .car_10 {
+    background-image: url(assets/organisers/aastik.jpg);
+  }
+  .car_11 {
+    background-image: url(assets/organisers/ananya.jpg);
+  }
+  .car_12 {
+    background-image: url(assets/organisers/kumar.jpg);
+  }
+  #btn {
+    background:rgb(53, 160, 169);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 15px;
+  }
+  
+  .card h3 {
+    text-align: center;
+    margin-bottom: auto;
+  }
+  
+  .card p {
+    text-align: justify;
+    padding: 0px 15px 15px 15px;
+    margin: auto;
+  }
+  
+  .container a {
+    background-color: #388087;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 0 0 15px 15px;
+    text-decoration: none;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+  }
+  
+  .container a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+
+
+/*================== FOOTER ==================*/
+
+.footer
+{
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding: 50px 0;
+
+}
+.footer i
+{
+    color: rgb(0, 0, 0);
+}
+.contain
+{
+    max-width: 1170px;
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer-col
+{
+    width: 30%;
+    padding: 0 15px;
+}
+.footer-col h4
+{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left:0;
+    background-color: goldenrod;
+    height: 2px;
+    box-sizing: border-box;
+    width: 90px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    display: block;
+    transition: all.03s ease;
+}
+.footer-col ul li a:hover
+{
+    color: goldenrod;
+}
+.social-links a
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #d1d1d1;
+    margin:0 7px 7px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover
+{
+    background-color: goldenrod;
+}
+.social-links i
+{
+    margin-top: 13px;
+}
+
+/*============= Go to Top Button ==============*/ 
+
+#goToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 90px;
+  height: 40px;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #388087;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#goToTopBtn:hover {
+  background-color: #2c6d78;
+}
+
+
+
+/*======================================================== MEDIA QUERIES ==========================================*/
+
+
+@media (max-width : 1200px)  /*============================ 1050px ====*/
+{
+    /*========== NAV ==============*/
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #d1d1d1;
+        top: 80px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .nav a:hover,a.active{
+        background: none;
+        color: goldenrod;
+        font-weight: bold;
+    }
+    .nav a.active{
+        background: none;
+        color: goldenrod;
+        font-weight: bold;
+    }        
+    .checkbtn {
+        display: block;
+    }
+    #menu-toggle:checked ~ ul {
+        left: 0;
+    }  
+}
+
+@media (max-width : 960px) /*=============================== 960px ====*/
+{  
+    /*============ NAV ==============*/
+  .slideshow-container
+    {
+        max-width: 100%;
+        padding-top: 80px;
+        margin: auto;
+    }
+  .slideimage img
+    {
+        max-width: 100%;
+        max-height: calc(70vh - 30px);
+        width: auto;
+    }
+   nav ul li a
+    {
+        font-size: 16px;
+    
+    }
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    /*=========== ABOUT =============*/
+    .about h1
+    {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /*=========== EVENTS ============*/
+
+    /*=========== GALLERY ===========*/
+
+    /*========= ORGANANISER =========*/
+
+    .organisers {
+        margin: 5px;
+       padding: 10px;
+      }
+       .organisers h1 {
+        font-size: 28px;
+      }
+      .container{
+        gap: 5px;
+      }
+      
+      
+      .card {
+        width: 27%; /* Adjust the card width to fit the viewport */
+        height: auto; /* Allow the card height to adjust based on content */
+      }
+    
+      .card_image {
+        height: 160px; /* Reset the card image height for smaller screens */
+      }
+    
+      .card h3 {
+        font-size: 15px; /* Adjust the font size for smaller screens */
+        padding: 1px;
+        margin: auto;
+      }
+      .card p {
+        font-size: 14px;
+        padding: 5px;
+      }
+    /*=========== FOOTER ===========*/
+}
+
+@media (max-width : 860px) /*=============================== 860px ====*/
+{
+    /*============ NAV ==============*/
+    label.logo {
+        font-size: 25px;
+    }
+
+    /*=========== ABOUT =============*/
+    .about {
+        font-family: Arial, sans-serif;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+      }
+      
+      .about h1 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+        text-align: center;
+      }
+      
+      .about .paragraph {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #555;
+        text-align: justify;
+      }
+    /*=========== EVENTS ============*/
+
+    /*=========== GALLERY ===========*/
+
+    /*========= ORGANANISER =========*/
+
+    .card {
+        width: 35%; /* Adjust the card width to fit the viewport */
+      }
+      .card_image {
+        height: 200px; /* Reset the card image height for smaller screens */
+      }
+    /*=========== FOOTER ===========*/
+
+}
+
+@media (max-width : 500px) /*=============================== 480px ====*/
+{
+    label.logo {
+        font-size: 20px;
+    }
+    .checkbtn {
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+   /*=========== ABOUT =============*/
+   .about {
+    max-width: 90%;
+    padding: 20px;
+  }
+  
+  .about h1 {
+    font-size: 23px;
+    margin-bottom: 17px;
+  }
+  
+  .about .paragraph {
+    font-size: 15px;
+  }
+   
+   /*=========== EVENTS ============*/
+   .event-container {
+    max-width: 90%;
+    border-radius: 15px;
+  }
+  
+  .event-container h1 {
+    margin-bottom: 25px;
+  }
+  
+  .event-container h2 {
+    font-size: 20px;
+  }
+  
+  .event-box {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .event-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .event-subtitle {
+    font-size: 14px;
+  }
+  
+  .event-description {
+    font-size: 13px;
+  }
+   
+   /*=========== GALLERY ===========*/
+  .gallery {
+    max-width: 90%;    
+    
+}
+
+.gallery h1 {
+    margin-top: 40px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.gallery h2 {
+    font-size: 20px;
+}
+
+.box {
+
+    margin-bottom: 0px;
+}
+
+
+.slideimage {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    perspective: 100px;
+    flex-shrink: 0;
+    
+}
+
+.slideimage img {
+    max-height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s, box-shadow 0.3s;
+}
+
+.slideimage img:hover {
+    transform: translateZ(8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+  
+   /*========= ORGANANISER =========*/
+   
+   
+   .organisers {
+    margin: 5px;
+   padding: 10px;
+  }
+   .organisers h1 {
+    font-size: 28px;
+  }
+  .container{
+    gap: 5px;
+  }
+  
+  .card p {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .card {
+    width: 40%; /* Adjust the card width to fit the viewport */
+    height: auto; /* Allow the card height to adjust based on content */
+  }
+
+  .card_image {
+    height: 160px; /* Reset the card image height for smaller screens */
+  }
+
+  .card h3 {
+    font-size: 11px; /* Adjust the font size for smaller screens */
+    padding: 1px;
+    margin: 0px;
+  }
+   /*=========== FOOTER ===========*/
+
+   #goToTopBtn {
+    bottom: 5px;
+    right: 20px;
+   }
+
+
+ 
+} 
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- END OF CODE -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=*/
