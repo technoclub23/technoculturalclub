@@ -5,8 +5,9 @@
   position: relative;
   margin-bottom: 30px;
   overflow: hidden;
-  box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
+
 .l-bg-cherry {
   background: linear-gradient(to right, #493240, #f09) !important;
   color: #fff;
@@ -18,7 +19,7 @@
 }
 
 .l-bg-blue-dark {
-  background: linear-gradient(to right, #373b44, rgb(2, 54, 136) ) !important;
+  background: linear-gradient(to right, #373b44, rgb(2, 54, 136)) !important;
   color: #fff;
 }
 
@@ -32,7 +33,10 @@
   color: #fff;
 }
 
-.card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large {
+.card .card-statistic-3 .card-icon-large .fas,
+.card .card-statistic-3 .card-icon-large .far,
+.card .card-statistic-3 .card-icon-large .fab,
+.card .card-statistic-3 .card-icon-large {
   font-size: 120px;
 }
 
@@ -74,7 +78,7 @@
   position: relative;
   margin-top: -100px;
   padding: 10px 0px;
-  color: #111;
+  color: #fff;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -93,10 +97,11 @@
   background-color: #2196F3;
   padding: 10px;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
- font-size: 30px;
-   padding: 20px;
+  font-size: 30px;
+  padding: 20px;
   text-align: center;
 }
